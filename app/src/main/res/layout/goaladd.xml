@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="#EFEFEF">
+
+    <LinearLayout
+        android:id="@+id/goaladdll"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="添加任务"
+            android:onClick="totaskadd"
+            android:textColor="#616161"
+            android:layout_weight="1"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="?android:attr/selectableItemBackground"
+            android:text="添加目标"
+            android:textColor="#2196F3"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/goaladdview"
+        android:layout_below="@id/goaladdll"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_weight="1"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#2196F3"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/goaladdtitle"
+        android:layout_below="@id/goaladdview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="输入目标"
+        android:textCursorDrawable="@drawable/gb"
+        android:background="@null"
+        android:textStyle="bold"
+        android:textColorHint="#BDBDBD"/>
+
+    <View
+        android:id="@+id/goaladdview2"
+        android:layout_below="@id/goaladdtitle"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#616161"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginBottom="0dp"/>
+
+    <EditText
+        android:layout_below="@id/goaladdview2"
+        android:id="@+id/goaladddescribe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="top"
+        android:textColor="#333333"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="描述"
+        android:textCursorDrawable="@drawable/gb"
+        android:background="@null"
+        android:textColorHint="#BDBDBD"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="128dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/times"
+        android:onClick="goaltimes"
+        app:backgroundTint="#2196F3"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="#00BCD4" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/color"
+        android:onClick="goalcolor"
+        app:backgroundTint="#2196F3"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="#00BCD4" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/goaldone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:src="@drawable/done"
+        android:onClick="goaladddone"
+        app:backgroundTint="#2196F3"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="mini"
+        app:pressedTranslationZ="12dp"
+        app:rippleColor="#00BCD4" />
+
+</RelativeLayout>
