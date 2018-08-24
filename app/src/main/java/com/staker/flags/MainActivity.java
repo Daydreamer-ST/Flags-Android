@@ -46,141 +46,11 @@ public class MainActivity extends Activity {
         SharedPreferences sp_alltt = getSharedPreferences("task", MODE_PRIVATE);
         alltimes = sp_alltt.getInt("alltimes", 0);
         donetimes = sp_alltt.getInt("donetimes", 0);
-        //任务总次数
+        //任务总次�?
 
         ids= new String[999999];
         idx=0;
-        //新建数组+默认下标为0
-
-        /*Date d = new Date();
-        SimpleDateFormat sdf = new SimpleDateFormat("dd");
-        String date = sdf.format(d);
-        //获取日期
-        if (date.equals("01")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date1);
-        }
-        if (date.equals("02")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date2);
-        }
-        if (date.equals("03")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date3);
-        }
-        if (date.equals("04")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date4);
-        }
-        if (date.equals("05")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date5);
-        }
-        if (date.equals("06")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date6);
-        }
-        if (date.equals("07")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date7);
-        }
-        if (date.equals("08")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date8);
-        }
-        if (date.equals("09")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date9);
-        }
-        if (date.equals("10")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date10);
-        }
-        if (date.equals("11")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date11);
-        }
-        if (date.equals("12")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date12);
-        }
-        if (date.equals("13")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date13);
-        }
-        if (date.equals("14")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date14);
-        }
-        if (date.equals("15")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date15);
-        }
-        if (date.equals("16")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date16);
-        }
-        if (date.equals("17")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date17);
-        }
-        if (date.equals("18")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date18);
-        }
-        if (date.equals("19")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date19);
-        }
-        if (date.equals("20")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date20);
-        }
-        if (date.equals("21")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date21);
-        }
-        if (date.equals("22")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date22);
-        }
-        if (date.equals("23")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date23);
-        }
-        if (date.equals("24")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date24);
-        }
-        if (date.equals("25")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date25);
-        }
-        if (date.equals("26")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date26);
-        }
-        if (date.equals("27")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date27);
-        }
-        if (date.equals("28")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date28);
-        }
-        if (date.equals("29")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date29);
-        }
-        if (date.equals("30")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date30);
-        }
-        if (date.equals("31")) {
-            LinearLayout dateicon = (LinearLayout) findViewById(R.id.dateicon);
-            dateicon.setBackgroundResource(R.drawable.date31);
-        }
-        //日期图标显示*/
+        //新建数组+默认下标�?
 
         SharedPreferences sp_times = getSharedPreferences("task", MODE_PRIVATE);
         times = sp_times.getInt("id", 1);
@@ -204,12 +74,12 @@ public class MainActivity extends Activity {
                     public void onClick(DialogInterface dialog, int which) {
                         SharedPreferences sp_delete = getSharedPreferences("task"+ids2, MODE_PRIVATE);
                         sp_delete.edit().clear().commit();
-                        //完成后清空数据
+                        //完成后清空数�?
                         SharedPreferences.Editor editor2 = getSharedPreferences("task", MODE_PRIVATE).edit();
                         editor2.putInt("donetimes",donetimes+1);
                         editor2.commit();
                         donetimes=donetimes+1;
-                        //完成任务数+1
+                        //完成任务�?1
                         Toast.makeText(MainActivity.this,"成功完成",Toast.LENGTH_SHORT).show();
                         al.remove(position);
                         sa.notifyDataSetChanged();
@@ -231,7 +101,7 @@ public class MainActivity extends Activity {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         AlertDialog.Builder dialog_delete = new AlertDialog.Builder(MainActivity.this);
-                        dialog_delete.setTitle("确认删除？");
+                        dialog_delete.setTitle("确认删除�?);
                         dialog_delete.setPositiveButton("确定", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
@@ -324,14 +194,14 @@ public class MainActivity extends Activity {
         startActivity(intent);
         this.overridePendingTransition(0, 0);
         finish();
-        //底部导航栏跳转
+        //底部导航栏跳�?
     }
     public void togoal(View v) {
         Intent intent = new Intent(MainActivity.this, Goal.class);
         startActivity(intent);
         this.overridePendingTransition(0, 0);
         finish();
-        //底部导航栏跳转
+        //底部导航栏跳�?
     }
     public void onResume() {
         super.onResume();
